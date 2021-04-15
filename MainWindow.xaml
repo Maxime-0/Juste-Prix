@@ -1,0 +1,40 @@
+﻿<Window x:Class="JustePrixWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JustePrixWPF"
+        mc:Ignorable="d"
+        Title="Le Juste Prix" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid x:Name="btnValidez">
+        <StackPanel>
+            <TextBlock x:Name="tbTime" Text="Compte à Rebours : 60" FontSize="20" Width="787"/>
+            <TextBlock x:Name="textEnonce" Text=" Un nombre entre 1 et 100 a été généré essaye de le trouver !" FontSize="20"/>
+            <TextBlock x:Name="textBlockInfo" FontSize="20"/>
+            <TextBlock x:Name="textBlockNbEssai" Text=" Nombre d'essais : 0" FontSize="20"/>
+            <TextBox x:Name="textBoxEssai" FontSize="20"/>
+            <Button x:Name="btnValider" Content="Valider" Click="btnValider_Click" FontSize="20"/>
+            <Button x:Name="btnNouvellePartie" Content="Nouvelle Partie" Click="btnNouvellePartie_Click" FontSize="20"/>
+        </StackPanel>
+        <TextBlock x:Name="textTentative" Text="Tentatives : 0" Margin="638,0,10,359" FontSize="20"/>
+        <Button x:Name="btnNiveauSuivant" Content="Choix du Niveau !" Margin="27,314,521,28" FontSize="20" Click="btnNiveauSuivant_Click"/>
+        <Button x:Name="btnSolo" Content="Solo" Margin="27,198,511,146" FontSize="50" Click="btnSolo_Click"/>
+        <Button x:Name="btnMultiJoueur" Content="MultiJoueur" Margin="469,185,40,146" FontSize="50" Click="btnMultiJoueur_Click"/>
+        <TextBlock x:Name="textBienvenue" Text="Bonjour bienvenue dans mon jeu ! Veuillez séléctionner le mode de jeu" Margin="10,38,-10,208" FontSize="24"/>
+        <TextBlock x:Name="textNomJoueur" Margin="268,27,66,191" FontSize="25"/>
+        <TextBlock x:Name="textJoueur1"  Margin="27,38,475,313" FontSize="50"/>
+        <TextBlock x:Name="textJoueur2"  Margin="520,44,32,279" FontSize="50" RenderTransformOrigin="0.5,0.5"/>
+        <TextBox x:Name="textBoxJoueur1" Margin="34,112,532,281"/>
+        <TextBox x:Name="textBoxJoueur2" Margin="508,112,0,281"/>
+        <TextBlock x:Name="Joueur1" Margin="27,156,521,228" FontSize="20"/>
+        <TextBlock x:Name="Joueur2" Margin="563,146,-65,233" FontSize="20"/>
+        <Button x:Name="btnValidez1" Content="Validez !" Margin="231,153,221,233" Click="btnValidez1_Click"/>
+        <Button x:Name="btnValidez2" Content="Validez !" Margin="231,153,221,233" Click="btnValidez2_Click"/>
+        <Button x:Name="btnValidez3" Content="Validez !" Margin="231,153,221,233" Click="btnValidez3_Click"/>
+        <Button x:Name="btnSuivant0" Content="Suivant !" Margin="513,323,32,37" Click="btnSuivant0_Click"/>
+        <Button x:Name="btnSuivant1" Content="Suivant !" Margin="513,323,32,37" Click="btnSuivant1_Click"/>
+        <Image x:Name="Ivelofille" Margin="289,217,299,74" Stretch="Fill" Source="Vélo fille.JPG"/>
+        <Image x:Name="iMontreHomme" Source="Montre Homme.jpg" Margin="80,217,75,31"/>
+        
+    </Grid>
+</Window>
